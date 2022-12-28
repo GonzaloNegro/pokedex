@@ -1,0 +1,239 @@
+.navbar{
+    background: rgb(121,9,21);
+    background: linear-gradient(180deg, rgba(121,9,21,1) 0%, rgba(255,29,0,1) 100%);
+}
+
+.navbar-brand{
+    margin: 0 auto;
+}
+
+.principal{
+    width: 100%;
+    height: 760px;
+    background-image: url("../images/pokemon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pokedex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.poke-card {
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    width: 300px;
+    border-radius: 10px;
+    background-color: red;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border: 2px solid black;
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.6);
+}
+
+
+.img-container {
+    position: relative;
+    background-image: url("https://img.freepik.com/vector-premium/fondo-naturaleza-pasto-verde-cielo-azul_87498-1090.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.6);
+}
+
+.poke-id{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.poke-stats{
+    border: 2px solid black;
+    box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.6);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: px;
+    font-size: 18px;
+}
+
+.poke-types div {
+    box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.6);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.poke-img {
+    padding: 15px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.data-poke-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.poke-btn{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 119, 255);
+    border: 4px solid grey;
+    border-radius: 40px;
+}
+
+.poke-btn-sound{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 204, 255);
+    border: 4px solid grey;
+    border-radius: 40px;
+    animation: separacion 2500ms ease infinite;
+}
+
+@keyframes separacion {
+    0% {
+      background-color: rgb(0, 204, 255); }
+    25% {
+        background-color: rgb(0, 119, 255); }
+    50% {
+        background-color: rgb(0, 204, 255); } 
+    75% {
+        background-color: rgb(0, 119, 255); }
+    100% {
+        background-color: rgb(0, 204, 255); }
+    }
+
+.poke-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form {
+    height: auto;
+    width: 250px;
+    margin: 0px auto;
+    background-color: red;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.6);
+}
+
+.search{
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.6);
+}
+/* -------------------------------------- */
+
+footer{
+    width: 100%;
+    height: auto;
+}
+
+.fot{
+    height: 150px;
+    background: rgb(121,9,21);
+    background: linear-gradient(0deg, rgba(121,9,21,1) 0%, rgba(255,29,0,1) 100%);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fot-img1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot-img1 img{
+    width: 150px;
+}
+
+.fot-img2 img{
+    width: 150px;
+}
+
+.fot-img3 img{
+    height: 150px;
+}
+
+/* ---------------------- */
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 20px;
+    border: 3px solid white; 
+  }
+
+
+  /* ///////////////////////////// */
+    /* ///////////////////////////// */
+      /* ///////////////////////////// */
+/* MOBILE */
+@media screen and (max-width: 599px){
+    .principal{
+        width: auto;
+        height: auto;
+        padding: 20px;
+
+        background-image: url("../images/ash.png");
+
+        justify-content: center;
+    }
+    
+    .pokedex{
+        margin-left: 10px;
+    }
+    
+    .fot-img1 img{
+        width: 100px;
+    }
+    
+    .fot-img2 img{
+        width: 100px;
+    }
+    
+    .fot-img3 img{
+        height: 100px;
+    }
+}
